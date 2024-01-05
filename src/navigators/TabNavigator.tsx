@@ -12,6 +12,7 @@ import CartScreen from '../screens/CartScreen';
 import FavoritesScreen from '../screens/FavoritesScreen';
 import OrderHistoryScreen from '../screens/OrderHistoryScreen';
 import CustomIcon from '../components/CustomIcon';
+import Animated, {useSharedValue} from 'react-native-reanimated';
 
 const Tab = createBottomTabNavigator();
 const TabNavigator = () => {
