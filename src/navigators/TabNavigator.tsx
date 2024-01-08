@@ -1,18 +1,13 @@
-import {StyleSheet, Text, View, Platform} from 'react-native';
-import React, {useState} from 'react';
+import {StyleSheet, Text, View} from 'react-native';
+import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {COLORS} from '../theme/theme';
-import {
-  BlurView,
-  VibrancyView,
-  BlurViewProps,
-} from '@react-native-community/blur';
+import {BlurView} from '@react-native-community/blur';
 import HomeScreen from '../screens/HomeScreen';
 import CartScreen from '../screens/CartScreen';
 import FavoritesScreen from '../screens/FavoritesScreen';
 import OrderHistoryScreen from '../screens/OrderHistoryScreen';
 import CustomIcon from '../components/CustomIcon';
-import Animated, {useSharedValue} from 'react-native-reanimated';
 
 const Tab = createBottomTabNavigator();
 const TabNavigator = () => {
